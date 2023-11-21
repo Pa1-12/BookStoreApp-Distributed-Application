@@ -194,6 +194,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - bookstore-app-network
+    privileged: true 
 
   bookstore-influxdb:
     image: influxdb
